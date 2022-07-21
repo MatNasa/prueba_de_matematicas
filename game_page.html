@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba de mate</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"><!-- enlace a bootrtrap-->
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Ld_2UVrvk9l0X0v9GNCXvbAIocq4y8QUXGcSiAm1uscpG3IEXkbKBPbIozSjRrtCvE0eWzH9M99oc3RdtcYcGzQ5snh7jH_3HJ77J_KxUZY" charset="UTF-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!-- enlace a bootrtrap-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script><!-- enlace a bootrtrap-->
+<link rel="stylesheet" type="text/css" href="game.css"><!-- enlace al archivo de estilo -->
+</head>
+<body>
+ <!--pon una etiqueta h4 con un id player1_name para mostrar el nombre del jugador. Pon una etiqueta span con un id player1_score para mostrar los puntos del jugador-->
+<h4 id="player1_name"></h4><span id="player1_score" ></span>
+<br>
+  <!--pon una etiqueta h4 con un id player2_name para mostrar el nombre del jugador. Pon una etiqueta span con un id player2_score para mostrar los puntos del jugador-->
+<h4 id="player2_name"></h4><span id="player2_score"></span>
+
+<div class="container"> <!-- clase de bootstrap que le agra a la pagina un margen predefinido-->
+	<center>
+		<h2 style="color: white;">Prueba de matematicas</h2>
+    <!-- pon una etiqueta h3 con el id player_question para mostrar el nombre del jugador que pregunta -->
+		<h3 id="player_question"></h3>
+    <!-- pon una etiqueta h3 con el id player_answer para mostrar el nombre del jugador que reponde -->
+		<h3 id="player_answer"></h3>
+    
+		<div id="output" class="col-lg-6"> </div> <!-- col-lg-6 es una clase de bootstrap que divide la pantalla en columnas-->
+		<br>
+		<br>
+		<label>Escribe tus numeros 
+		</label>
+		<input type="text" id="num1" class="form-control" placeholder="Numero">
+		<br>
+		<input type="text" id="num2" class="form-control" placeholder="Numero">
+		<br>
+    <!-- pon un botón con un evneto onclick que llame a la funcion send, agrega la clase de boostrap btn btn-success y ponle un estilo de width: 30%;  el texto del botón es Enviar -->
+	<button onclick="send()" class="btn btn-success" style ="width: 30%;">Enviar</button>
+	</center>
+</div>
+
+<script src="game_page.js"></script> <!--enlace al archivo de javascript -->
+</body>
+</html>
